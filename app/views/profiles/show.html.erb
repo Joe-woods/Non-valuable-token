@@ -62,7 +62,7 @@
         <h2>My NVTs</h2>
         <% @nvts.each do |nvt| %>
           <div class="card-item">
-          <%= cl_image_tag nvt.photo.key %>
+            <%= cl_image_tag nvt.photo.key %>
             <div class="card-item-infos">
               <h3><%= link_to nvt.category, nvt_path(nvt) %></h3>
                 <h2><%= nvt.title %> </h2>
